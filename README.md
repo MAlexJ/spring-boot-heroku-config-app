@@ -1,6 +1,8 @@
-### Spring Cloud Config
+## Application configuration:
 
-#### Configuration:
+### ENV Variables
+
+1. ZIPKIN_PORT - URL to Zipkin distributed tracing system, by default - http://localhost
 
 ##### gradle:
 

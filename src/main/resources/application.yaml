@@ -8,3 +8,10 @@ spring:
       server:
         git:
           uri: https://github.com/MAlexJ/config-app.git
+  jackson:
+    serialization:
+      indent_output: true
+  application:
+    name: "heroku-config-app"
+  zipkin:
+    baseUrl: ${ZIPKIN_PORT:http://127.0.0.1:9411}
