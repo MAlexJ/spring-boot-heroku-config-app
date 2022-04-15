@@ -1,10 +1,16 @@
 server:
   port: ${PORT:8888}
 
+config:
+  info: Server Config app
+
+encrypt:
+  key: ${CONFIG_ENCRYPT_KEY:foMilky86GHmxB7C9}
+
 spring:
   cloud:
     config:
-      name: config-server
+      name: heroku-config-app
       server:
         git:
           uri: https://github.com/MAlexJ/config-app.git
@@ -12,6 +18,6 @@ spring:
     serialization:
       indent_output: true
   application:
-    name: "heroku-config-app"
+    name: heroku-config-app
   zipkin:
     baseUrl: ${ZIPKIN_PORT:http://127.0.0.1:9411}

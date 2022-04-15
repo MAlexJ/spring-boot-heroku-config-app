@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "e66e6a90-a9f8-4c40-b458-075b2434f3aa",
+		"name": "Server Config API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET: info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{site_url}}/rest/v1/info",
+					"host": [
+						"{{site_url}}"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: test API call",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{site_url}}/foo/default",
+					"host": [
+						"{{site_url}}"
+					],
+					"path": [
+						"foo",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: spring-boot-heroku-scheduler-app props",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{site_url}}/spring-boot-heroku-scheduler-app/default",
+					"host": [
+						"{{site_url}}"
+					],
+					"path": [
+						"spring-boot-heroku-scheduler-app",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decrypt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "text"
+				},
+				"url": {
+					"raw": "{{site_url}}/decrypt",
+					"host": [
+						"{{site_url}}"
+					],
+					"path": [
+						"decrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Encrypt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "text"
+				},
+				"url": {
+					"raw": "{{site_url}}/encrypt",
+					"host": [
+						"{{site_url}}"
+					],
+					"path": [
+						"encrypt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
