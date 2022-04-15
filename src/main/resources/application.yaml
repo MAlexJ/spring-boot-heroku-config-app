@@ -1,9 +1,6 @@
 server:
   port: ${PORT:8888}
 
-config:
-  info: Server Config app
-
 encrypt:
   key: ${CONFIG_ENCRYPT_KEY:foMilky86GHmxB7C9}
 
