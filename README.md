@@ -3,7 +3,7 @@
 ### ENV Variables
 
 1. ZIPKIN_PORT - URL to Zipkin distributed tracing system, by default - http://localhost
-2. 
+2. CONFIG_ENCRYPT_KEY - encryption key for password and sensitive info 
 
 ##### gradle:
 
