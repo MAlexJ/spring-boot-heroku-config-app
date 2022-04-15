@@ -1,9 +1,10 @@
 server:
-  port: ${PORT:8089}
+  port: ${PORT:8888}
 
 spring:
   cloud:
     config:
+      name: config-server
       server:
         git:
           uri: https://github.com/MAlexJ/config-app.git
