@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "e66e6a90-a9f8-4c40-b458-075b2434f3aa",
-		"name": "Server Config API",
+		"name": "Server_Config_API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -48,12 +48,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{site_url}}/spring-boot-heroku-scheduler-app/default",
+					"raw": "{{site_url}}/heroku-scheduler-app/default",
 					"host": [
 						"{{site_url}}"
 					],
 					"path": [
-						"spring-boot-heroku-scheduler-app",
+						"heroku-scheduler-app",
 						"default"
 					]
 				}
@@ -67,7 +67,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "text"
+					"raw": "ab5886338f2324eda0ea47aaa8713002b609795dadbe99d35d30db2d5d9615ca"
 				},
 				"url": {
 					"raw": "{{site_url}}/decrypt",
@@ -88,7 +88,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "text"
+					"raw": "simple message"
 				},
 				"url": {
 					"raw": "{{site_url}}/encrypt",

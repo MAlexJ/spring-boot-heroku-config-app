@@ -1,24 +1,33 @@
-## Application configuration:
+## Configuration service for configuring microservices property files
 
-### ENV Variables
+### Deploy:
+
+to deploy configuration server, developer needs to configure environment variables:
 
 1. ZIPKIN_PORT - URL to Zipkin distributed tracing system, by default - http://localhost
-2. CONFIG_ENCRYPT_KEY - encryption key for password and sensitive info 
+2. CONFIG_ENCRYPT_KEY - encryption key for password and sensitive info, by default - foMilky86GHmxB7C9
 
-##### gradle:
+### Administration:
 
-* '<b>updateProcfile</b>' task designed to update Procfile file that HEROKU service uses for deployment
+After making critical changes (changes to API or adding new functionality),  <br>
+developer need to upgrade:
 
-#### Postman
+1. up server version: X.X.X in build gradle file
+2. up version in Procfile file, run updateProcfile task
+   <br>
+   '<b>updateProcfile</b>' task designed to update Procfile file that HEROKU service uses for deployment
 
-* postman collection for test API: /info/Server_Config_API.postman_collection.json
+### Testing:
 
-#### Documentation links:
+Postman collection is used for testing
+
+* location: /info/Server_Config_API.postman_collection.json
+
+### Documentation:
 
 * [Spring Cloud Documentation](https://cloud.spring.io/spring-cloud-config/reference/html/)
 * [Simple example](https://betacode.net/11723/understanding-spring-cloud-config-server-with-example)
 
-encrypt.key=foM}kcGHmxB7[C9
-
-Note: Once you copy the JCE libraries you will need to kill the running Java process and start it again. If that does not help, restart your computer.
+Note: Once you copy the JCE libraries you will need to kill the running Java process and start it again. If that does
+not help, restart your computer.
 If you have java version > 8, then the JCE library is supported by default.
