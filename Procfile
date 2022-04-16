@@ -1,1 +1,1 @@
-web: java -jar build/libs/spring-boot-heroku-config-app-0.1.5.jar
+web: java -jar build/libs/spring-boot-heroku-config-app-0.1.6.jar
