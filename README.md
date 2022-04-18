@@ -4,8 +4,9 @@
 
 to deploy configuration server, developer needs to configure environment variables:
 
-1. ZIPKIN_PORT - URL to Zipkin distributed tracing system, by default - http://localhost
-2. CONFIG_ENCRYPT_KEY - encryption key for password and sensitive info, by default - foMilky86GHmxB7C9
+1. PORT - spring application port, by default - 8888
+2. ZIPKIN_PORT - URL to Zipkin distributed tracing system, by default - http://localhost
+3. CONFIG_ENCRYPT_KEY - encryption key for password and sensitive info, by default - foMilky86GHmxB7C9
 
 ### Administration:
 
